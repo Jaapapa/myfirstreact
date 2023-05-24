@@ -5,7 +5,7 @@ import { useState } from "react";
 
 function App() {
   const [tweets, setTweets] = useState([
-    { name: "Jaap", message: "Hoi" },
+    { name: "Jaap", message: "Hoi" }, 
     { name: "Johnny Bravo", message: "Damn, I'm pretty" }
   ]);
   const onSubmit = function (event, name, message) {
