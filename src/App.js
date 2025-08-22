@@ -15,7 +15,7 @@ function App() {
   };
   return (
     <>
-      <TweetForm onSubmit={onSubmit} bla="propexample"></TweetForm>
+      <TweetForm onSubmit={onSubmit}></TweetForm>
       <TweetList tweets={tweets}></TweetList>
     </>
   );
