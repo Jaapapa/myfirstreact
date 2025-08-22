@@ -1,11 +1,9 @@
 import SingleTweet from "./SingleTweet";
 
 function TweetList(props) {
-  const tweetList = props.tweets.map((tweet) => (
-    <SingleTweet key={tweet.name + tweet.message} name={tweet.name} message={tweet.message}></SingleTweet>
+  const tweetList = props.tweets.map((tweet, index) => (
+    <SingleTweet key={index} name={tweet.name} message={tweet.message}></SingleTweet>
   ));
-  return (
-    <>{tweetList}</>
-  );
+  return <>{tweetList}</>;
 }
 export default TweetList;
