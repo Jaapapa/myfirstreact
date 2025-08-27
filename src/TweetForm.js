@@ -11,7 +11,7 @@ function TweetForm(props) {
     setMessage(e.target.value);
   };
 
-  const handleSubmit = function (e) {
+  const handleTweetSubmit = function (e) {
     e.preventDefault();
     props.onSubmit(e, name, message);
     setName("");
@@ -19,7 +19,7 @@ function TweetForm(props) {
   };
 
   return (
-    <form id="tweetform" onSubmit={handleSubmit}>
+    <form id="tweetform" onSubmit={handleTweetSubmit}>
       <label className="form-label" htmlFor="displayname">
         Display name:
       </label>
